@@ -196,6 +196,10 @@ nav{
     background: var(--first-color);
     color: var(--color-white);
 }
+.blue-btn a{
+    text-decoration: none;
+    color: white;
+}
 .featured-text-btn>.blue-btn:hover{
     background: var(--first-color-hover);
 }

@@ -45,7 +45,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
 
 /* ----- TYPING EFFECT ----- */
 var typingEffect = new Typed(".typedText",{
-  strings : ["Designer","Developer","Video Editor"],
+  strings : ["Designer","Developer"],
   loop : true,
   typeSpeed : 100, 
   backSpeed : 80,
