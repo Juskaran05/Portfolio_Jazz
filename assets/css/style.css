@@ -135,8 +135,8 @@ nav{
     left: 50%;
     bottom: -15px;
     transform: translate(-50%, -50%);
-    width: 5px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
     background: var(--first-color);
     border-radius: 50%;
 }
@@ -531,6 +531,22 @@ footer{
 .bottom-footer{
     font-size: 14px;
     margin-top: 10px;
+}
+.footer-icon{
+    transition: transform 0.5s ease; 
+    box-shadow: 5px 5px 5px 0px rgba(15, 15, 15, 0.25);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icon:hover{
+    transform: translateY(-10px);   
+}
+.footer-icon a i{
+    font-size: 20px;
 }
 
 

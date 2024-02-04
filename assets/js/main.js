@@ -34,18 +34,13 @@ function headerShadow() {
 /* ----- CONTACT FORM ----- */
 
 document.getElementById("myForm").addEventListener("submit", function(event) {
-  // Clear the input field after a delay of 1 second
+  // Clear the input field after a delay of 1 second upon form submission
   setTimeout(function() {
-  // Clear the input field immediately upon form submission
   document.getElementById("name").value = "";
   document.getElementById("email").value = "";
   document.getElementById("message").value = "";
-}, 1000); // 1000 milliseconds = 1 second
+}, 2000); // 1000 milliseconds = 1 second
 });
-
-
-
-
 
 
 /* ----- TYPING EFFECT ----- */
