@@ -192,6 +192,9 @@ nav{
     display: flex;
     gap: 20px;
 }
+.blue-btn a{
+    text-decoration: none;
+}
 .featured-text-btn>.blue-btn{
     background: var(--first-color);
     color: var(--color-white);
@@ -230,7 +233,7 @@ nav{
     margin: auto 0;
     width: 380px;
     height: 380px;
-		border: solid rgb(227, 222, 222);
+		border: 3px solid rgb(80, 78, 78);
     border-radius: 55% 45% 55% 45%;
     overflow: hidden;
     animation: imgFloat 8s ease-in-out infinite;
