@@ -10,12 +10,19 @@ function myMenuFunction(){
 }
 
 /* ----- HIRE ME BUTTON ----- */
+
 document.getElementById('hireBtn').addEventListener('click', function() {
   var mailLink = "mailto:juskaranbuted@gmail.com?subject=Frontend%20Developer%20Job%20Vacancy&body=Hi%20there,";
 
   // Create a temporary link to check if the email application is opened
   var tempLink = document.createElement('a');
   tempLink.href = mailLink;
+
+  // Check if mailto protocol is supported
+  if (tempLink.protocol !== "mailto:") {
+      window.open("https://www.google.com/search?q=email+application", "_blank");
+      return;
+  }
 
   // Simulate click on the link to open the email application
   tempLink.click();
@@ -27,6 +34,7 @@ document.getElementById('hireBtn').addEventListener('click', function() {
       }
   }, 500);
 });
+
 
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
 window.onscroll = function() {headerShadow()};
