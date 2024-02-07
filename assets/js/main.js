@@ -9,6 +9,25 @@ function myMenuFunction(){
   }
 }
 
+/* ----- HIRE ME BUTTON ----- */
+document.getElementById('hireBtn').addEventListener('click', function() {
+  var mailLink = "mailto:juskaranbuted@gmail.com?subject=Frontend%20Developer%20Job%20Vacancy&body=Hi%20there,";
+
+  // Create a temporary link to check if the email application is opened
+  var tempLink = document.createElement('a');
+  tempLink.href = mailLink;
+
+  // Simulate click on the link to open the email application
+  tempLink.click();
+
+  // Check if the email application is not opened
+  setTimeout(function() {
+      if (!document.hasFocus()) {
+          alert("Please open your Email application to proceed.");
+      }
+  }, 500);
+});
+
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
 window.onscroll = function() {headerShadow()};
 
